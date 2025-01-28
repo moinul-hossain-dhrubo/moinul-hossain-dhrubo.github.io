@@ -2764,3 +2764,79 @@ input, select, textarea {
 				}
 
 	}
+
+	.social-buttons {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+		flex-wrap: wrap;
+	}
+
+	.social-buttons {
+		background-color: #333630;
+		padding: 20px;
+		border-radius: 5px;
+		text-align: center;
+	}
+	
+	.button-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 12px;
+		background-color: #c4c4c4;
+		color: rgb(24, 23, 23);
+		text-decoration: none;
+		font-size: 0.8rem;
+		padding: 1px 8px;
+		border-radius: 12px;
+		transition: background-color 0.3s ease, transform 0.2s ease;
+	}
+	
+	.button-icon:hover {
+		background-color: #555;
+		transform: scale(1.05);
+	}
+	
+	.button-icon i {
+		font-size: 1rem;
+	}
+
+	.social-links {
+		text-align: center;  /* Centers the content */
+		margin: 50px 0;  /* Adds space above and below the section */
+	}
+	
+	.social-links-headline {
+		font-size: 24px;  /* Adjust font size */
+		font-weight: bold;  /* Makes the headline bold */
+		margin-bottom: 20px;  /* Adds space below the headline */
+		color: #333;  /* Sets a color for the headline */
+	}
+	
+	.social-buttons {
+		display: flex;  /* Align buttons in a row */
+		justify-content: center;  /* Centers the buttons */
+		gap: 15px;  /* Adds space between buttons */
+	}
+	
+	.button-icon {
+		text-decoration: none;  /* Removes underline */
+		color: #000;  /* Button text color */
+		padding: 10px 20px;  /* Adds padding around buttons */
+		border-radius: 5px;  /* Rounds the button corners */
+		background-color: #f0f0f0;  /* Background color */
+		display: flex;  /* Aligns the icon and text */
+		align-items: center;  /* Vertically aligns the content */
+		gap: 10px;  /* Space between icon and text */
+	}
+	
+	.button-icon:hover {
+		background-color: #e0e0e0;  /* Change background on hover */
+	}
+	
+	
+
+	
