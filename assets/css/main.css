@@ -3076,6 +3076,40 @@ input, select, textarea {
 			width: 60px;
 			}
 
+			/* Add these mobile adjustments */
+.category-row {
+	padding: 0 15px; /* Adds space on both sides */
+  }
+  
+  .image-container {
+	margin: 0 10px; /* Ensures images don't touch screen edges */
+  }
+  
+  @media (max-width: 768px) {
+	/* Mobile-specific fixes */
+	.category-row {
+	  flex-direction: column;
+	  margin: 0 15px; /* Adds side margins */
+	  padding: 0;
+	}
+  
+	.image-container {
+	  width: 100% !important;
+	  margin: 0;
+	  max-width: calc(100% - 30px); /* Prevents overflow */
+	}
+  
+	.description-container {
+	  padding: 20px 15px; /* Text spacing */
+	  width: 100%;
+	}
+  
+	/* Universal mobile padding */
+	#portfolio .container {
+	  padding: 0 15px;
+	}
+  }
+
 		
 
 		
