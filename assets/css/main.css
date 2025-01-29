@@ -2806,7 +2806,7 @@ input, select, textarea {
 
 	.social-links {
 		text-align: center;  /* Centers the content */
-		margin: 50px 0;  /* Adds space above and below the section */
+		margin: 20px 0;  /* Adds space above and below the section */
 	}
 	
 	.social-links-headline {
@@ -2869,6 +2869,219 @@ input, select, textarea {
 		flex: 1;
 		max-width: 600px;
 	}
+
+	/* In your CSS */
+	/* .name { 
+		font-size: 1.7rem;
+		letter-spacing: -0.05em;
+		margin-bottom: 0.5rem;
+	}
+	
+	.alt strong {
+		font-size: 3rem;
+		background: linear-gradient(45deg, #ffffff, #4e4376);
+		-webkit-background-clip: text;
+		color: transparent;
+	} */
+
+
+	/* Add to your CSS */
+		#contact.five {
+		padding: 4rem 0;
+		background: #3d3d3d;
+		border-top: 3px solid rgba(0, 0, 0, 0.08);
+		margin-top: 3rem;
+		}
+
+		#contact.five header h2 {
+		font-size: 2.2rem;
+		color: #d9dbdd;
+		margin-bottom: 1rem;
+		position: relative;
+		display: inline-block;
+		}
+
+		#contact.five header h2:after {
+		content: '';
+		position: absolute;
+		bottom: -10px;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background: #7a8877;
+		}
+
+		#contact.five .container {
+		max-width: 600px;
+		}
+
+		#contact.five form {
+		background: rgba(212, 200, 200, 0.9);
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+		}
+
+		#contact.five input,
+		#contact.five textarea {
+		width: 100%;
+		padding: 12px;
+		margin-bottom: 1rem;
+		border: 1px solid #ddd;
+		border-radius: 6px;
+		font-size: 1rem;
+		transition: all 0.3s ease;
+		}
+
+		#contact.five input:focus,
+		#contact.five textarea:focus {
+		border-color: #2b5876;
+		box-shadow: 0 0 8px rgba(43, 88, 118, 0.1);
+		}
+
+		#contact.five input[type="submit"] {
+		background: #2b5876;
+		color: white;
+		padding: 12px 30px;
+		border: none;
+		border-radius: 6px;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		text-transform: uppercase;
+		font-weight: 600;
+		letter-spacing: 1px;
+		}
+
+		#contact.five input[type="submit"]:hover {
+		background: #1a3a4d;
+		transform: translateY(-2px);
+		}
+
+		.copyright {
+			font-size: 14px; /* Adjust the size as needed */
+			color: #888; /* Optional: Makes it slightly muted */
+			text-align: center; /* Centers the text */
+		}
+
+		.contact-section {
+			text-align: center;
+			padding: 40px 0;
+			background: #f9f9f9; /* Light background for better separation */
+		}
+		
+		.contact-section .container {
+			max-width: 800px;
+			margin: auto;
+		}
+		
+		.social-links {
+			margin-top: 20px;
+		}
+		
+		.social-buttons a {
+			display: inline-block;
+			margin: 10px;
+			padding: 10px 15px;
+			border-radius: 5px;
+			text-decoration: none;
+			font-weight: bold;
+			color: rgb(58, 58, 58);
+			background: #ffffff; /* Default dark buttons */
+			transition: 0.3s;
+		}
+		
+		.social-buttons a:hover {
+			background: #c4414c; /* Slightly lighter on hover */
+		}
+		
+		.copyright {
+			margin-top: 20px;
+			font-size: 14px;
+			color: #888;
+		}
+
+		/*content justify
+		/* Add this to your CSS */
+		#overview p {
+			text-align: justify;
+			hyphens: off;        /* Better word breaks */
+			text-justify: inter-word; /* Better spacing */
+			margin: 1.5rem 0;     /* Vertical margins */
+			line-height: 1.6;     /* Line spacing */
+		}
+
+		/* an overview */
+
+		/* Add this to your CSS */
+		#overview header h2 {
+			font-size: 2.2rem;       /* Slightly larger */
+			font-weight: 700;        /* Bolder text */
+			color: #57575e;          /* Match your theme color */
+			padding-bottom: 0.5rem;  /* Space for underline */
+			margin-bottom: 1.5rem;   /* Spacing after header */
+			position: relative;      /* For underline positioning */
+			display: inline-block;   /* Contain the underline */
+		}
+		
+		#overview header h2::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;             /* Full width of text */
+			height: 3px;             /* Underline thickness */
+			background: #616362;     /* Secondary color from your theme */
+			border-radius: 2px;
+			opacity: 0.4;      /* Soften edges */
+		}
+
+		
+
+
+		#portfolio header h2 {
+			font-size: 2.2rem;
+			font-weight: 700;
+			color: #57575e;          /* Matching overview text color */
+			padding-bottom: 0.5rem;
+			margin: 2rem 0 1.5rem;   /* Adjusted spacing */
+			position: relative;
+			display: inline-block;
+		  }
+		  
+		  #portfolio header h2::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 3px;
+			background: #616362;     /* Matching overview underline color */
+			border-radius: 2px;
+			opacity: 0.4;
+		  }
+		  
+		  #portfolio header p {
+			color: #57575e;          /* Matching text color */
+			margin-top: 0.5rem;
+			font-size: 1rem;
+		  }
+
+		  #portfolio header h2::before,
+			#portfolio header h2::after {
+			transition: width 0.3s ease;
+			}
+
+			#portfolio header h2:hover::before,
+			#portfolio header h2:hover::after {
+			width: 60px;
+			}
+
+		
+
+		
+
+	
+
 	
 	
 
