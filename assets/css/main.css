@@ -3035,6 +3035,58 @@ input, select, textarea {
 			opacity: 0.4;      /* Soften edges */
 		}
 
+		#portfolio header h2 {
+			font-size: 2.2rem;
+			font-weight: 700;
+			color: #57575e;          /* Matching overview text color */
+			padding-bottom: 0.5rem;
+			margin: 2rem 0 1.5rem;   /* Adjusted spacing */
+			position: relative;
+			display: inline-block;
+		  }
+		  
+		  #portfolio header h2::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 3px;
+			background: #616362;
+			opacity: 0.4;     /* Matching overview underline color */
+			border-radius: 2px;
+		  }
+		  
+		  #portfolio header p {
+			color: #57575e;          /* Matching text color */
+			margin-top: 0.5rem;
+			font-size: 1rem;
+		  }
+
+		  @media (max-width: 768px) {
+			.category-row {
+			  padding: 0 5%; /* Equal left/right margins */
+			}
+		  
+			.image-container {
+			  width: 90% !important; /* 10% total margin (5% each side) */
+			  margin: 0 auto !important; /* Center align */
+			  padding: 0;
+			}
+		  
+			.portfolio-image {
+			  width: 100% !important;
+			  height: auto;
+			  margin: 0 auto;
+			  border-radius: 8px;
+			}
+		  
+			.description-container {
+			  width: 100%;
+			  padding: 15px 5% !important; /* Match image margins */
+			}
+		  }
+
 		
 
 
