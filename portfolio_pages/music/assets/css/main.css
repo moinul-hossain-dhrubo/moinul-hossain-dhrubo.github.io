@@ -2783,3 +2783,19 @@ input, select, textarea {
 				}
 
 	}
+
+	.contact-buttons .button {
+		font-size: 14px;  /* Smaller text */
+		padding: 8px 16px; /* Reduce padding */
+		display: inline-block;
+		margin: 5px;
+		border-radius: 5px; /* Optional: Slightly rounded corners */
+	}
+	
+	.contact-buttons {
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+		flex-wrap: wrap;
+	}
+	
