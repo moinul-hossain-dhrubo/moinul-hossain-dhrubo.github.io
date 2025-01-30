@@ -2790,12 +2790,17 @@ input, select, textarea {
 		display: inline-block;
 		margin: 5px;
 		border-radius: 5px; /* Optional: Slightly rounded corners */
+		background-color: rgb(59, 59, 59); /* Button background */
+		color: rgb(163, 37, 37); /* Button text */
+		text-decoration: none; /* Remove underline */
+		border: 2px solid black; /* Add a black border */
+		transition: all 0.3s ease-in-out; /* Smooth hover effect */
 	}
 	
-	.contact-buttons {
-		display: flex;
-		justify-content: center;
-		gap: 10px;
-		flex-wrap: wrap;
+	.contact-buttons .button:hover {
+		background-color: rgb(119, 107, 107); /* Button turns white */
+		color: black; /* Text turns black */
+		border: 2px solid black; /* Keep the border */
 	}
+	
 	

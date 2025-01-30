@@ -43,17 +43,57 @@
             </div>
         </section>
 
-        <!-- Why This Website -->
+        <!-- How I Got into Music? -->
+        
         <section id="reason" class="two">
           <div class="container">
-              <header>
-                  <h2>How I got into Music?</h2>
-              </header>
-              <p>
-                  Story for another day. This website is under construction. The story will be published soon.
-              </p>
+            <header>
+              <h2>How I Got into Music?</h2>
+            </header>
+            <p>
+              Back in my early days, listening to music wasn’t as easy as it is now. 
+              You had to buy CDs or DVDs to enjoy an album. There was an old cassette player at home, 
+              but it broke down before I even figured out how to use it. I still remember a TV program that aired every Friday at 1:30 PM, 
+              showcasing song and album advertisements. I eagerly waited for it every week and ended up memorizing all the songs. 
+              I was probably seven years old at the time.
+              <span id="dots1">...</span><span id="more1" style="display: none;">
+                <br><br>
+                One day in school, our teacher said, “We’ve completed the syllabus, and since no one has any questions, let’s spend the time listening to songs. 
+                If anyone wants to sing, come up and perform.” My friends, knowing how much I loved singing, pushed me to go up that day. 
+                That became my very first performance. The whole class cheered and clapped, and I felt incredibly happy. 
+                From that moment on, I started singing in class whenever there was an opportunity—especially when we had free time after finishing the syllabus. 
+                My teachers were always supportive, and my friends Shrestho, Farhan, Talha, Tonmoy also joined me on the stage. 
+                Farhan and Talha were the percussionists, making our little music sessions even more special.
+                
+                That is how my live performing ability and confidence has grown. I am thankful to all my friends, my classmates who always appreciated me, cheered 
+                for me and gave me the support. My family never complained as long as my result is good.
+              </span>
+            </p>
+            <button onclick="toggleText('dots1', 'more1', 'btn1')" id="btn1">Read More</button>
           </div>
-      </section>
+        </section>
+
+        <script>
+          document.getElementById("read-more-btn").addEventListener("click", function() {
+            var moreContent = document.getElementById("more-content");
+            moreContent.style.display = "block";
+            this.style.display = "none"; // Hide the button after clicking
+          });
+        </script>
+
+        <style>
+          /* Ensure text alignment for all paragraphs */
+          #reason .container {
+            text-align: left;
+          }
+
+          #reason p {
+            text-align: left;
+          }
+        </style>
+
+
+
 
       <!-- Memorable Photos -->  
       <section id="images" class="four">
@@ -84,17 +124,101 @@
           </div>
         </section>
 
-        <!-- Overview -->
+        <!-- Musical Journey-->
+        <!-- Musical Journey -->
         <section id="overview" class="three">
-          <div class="container">
-              <header>
-                  <h2>Musical Journey</h2>
-              </header>
+          <div class="container" style="text-align: left;">
+            <header>
+              <h2>Musical Journey - A Short Brief</h2>
+            </header>
+
+            <p>
+              On April 4, 2010, I bought my first guitar and started learning at Ghashful Art School with my friends. 
+              That was the first time I heard someone play the guitar live—our teacher, Mithu Qureshi. 
+              We took lessons and tried to complete them with the highest accuracy possible. 
+              There was always a competition between me and Shrestho. We pushed each other whenever a new lesson came up. 
+              It actually helped both of us, as we were the only two who didn’t give up learning the guitar.
+            </p>
+
+            <button id="read-more-btn-overview" class="button">Read More</button>
+
+            <div id="more-content-overview" style="display: none;">
               <p>
-                Story for another day. This website is under construction. The story will be published soon.
+                After about a year, we joined another school called Shatrong, where we trained under guitarist Shukhon Zaman. 
+                His approach was different from our first teacher’s, and as a result, our playing styles evolved. During this time, we covered many songs and slowly became popular in school. 
+                That’s when I decided to start a band.
               </p>
+
+              <p>
+                When I was in class 10, I started jamming at my friend Tanvir’s house, along with Farhan, Hasib, and Tonmoy. Eventually, Tanvir and I bought electric guitars and formed a band called Babodhan. 
+                We released a single in 2013, called "Amar Janala," in a band compilation album called "Kritodash." We also played some good gigs. For a brief period, I also played in a band called "ThikanaHin."
+              </p>
+
+              <p>
+                However, after school, everyone got admitted into different colleges, and we couldn’t continue. So, I started playing alone at home, 
+                learning from YouTube videos, and composing some songs. Incidentally, Rishal joined me as my guitar partner. 
+                He was the one who could match my energy while playing, so I could focus on singing. We played in shows, rooftops, and universities.
+                I took lyrics from the poetry of my friend Azmain Haq and composed some songs, notably the "Rainy Blues" series.
+              </p>
+
+              <p>
+                Later, I started making music with Akram Bhai, Rabby Bhai, and Russel Bhai, forming a band that, unfortunately, didn’t last long. 
+                Even though the band dissolved, they remain my close brothers, and we created a lot of music together. 
+                I truly miss that band from the core of my heart. Fast forward to 2017, I joined my dream band, "Shohortoli." 
+                I played in two gigs with them but eventually didn’t continue for various reasons. After all this, I decided not to form another band. Instead, I focused on improving myself first.
+              </p>
+
+              <p>
+                At university, my genre shifted toward Indian Classical Music. I realized that I needed to practice a lot more if I wanted to become a professional vocalist. 
+                Otherwise, I would end up being a mediocre artist, which I didn’t want to become. So, I started practicing seriously, and my vocal skills improved significantly. 
+                However, I never became a great Indian classical musician.
+              </p>
+
+              <p>
+                Most of the time after school, I sang on rooftops and received admiration from various people, for which I am truly grateful. 
+                Without music, I would never have realized how much people love to hear my voice sing, and my hands play the guitar.
+              </p>
+
+              <p>
+                Note: This is just a short brief. Someday, I wish to elaborate the story even more. 
+              </p>
+            </div>
+
+            <!-- Show Less Button -->
+            <button id="show-less-btn-overview" class="button" style="display: none;">Show Less</button>
           </div>
-      </section>
+        </section>
+
+        <script>
+          // Read More functionality
+          document.getElementById("read-more-btn-overview").addEventListener("click", function() {
+            var moreContent = document.getElementById("more-content-overview");
+            moreContent.style.display = "block";
+            this.style.display = "none"; // Hide Read More button
+            document.getElementById("show-less-btn-overview").style.display = "inline"; // Show Show Less button
+          });
+
+          // Show Less functionality
+          document.getElementById("show-less-btn-overview").addEventListener("click", function() {
+            var moreContent = document.getElementById("more-content-overview");
+            moreContent.style.display = "none";
+            this.style.display = "none"; // Hide Show Less button
+            document.getElementById("read-more-btn-overview").style.display = "inline"; // Show Read More button
+          });
+        </script>
+
+        <style>
+          /* Ensure left alignment for all text */
+          #overview .container {
+            text-align: left;
+          }
+
+          #overview p {
+            text-align: left;
+          }
+        </style>
+
+
 
         <!-- Portfolio Section -->
         <section id="portfolio" class="four">
@@ -136,36 +260,6 @@
           </div>
         </section>
 
-        <!-- Contact -->
-        <!-- <section id="contact" class="five">
-            <div class="container">
-                <header>
-                    <h2>Contact</h2>
-                </header>
-                <p>Feel free to reach out to me for collaboration or just a friendly chat!</p>
-                <form method="post" action="#">
-                    <div class="row">
-                        <div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-                        <div class="col-6 col-12-mobile"><input type="email" name="email" placeholder="Email" /></div>
-                        <div class="col-12">
-                            <textarea name="message" placeholder="Message"></textarea>
-                        </div>
-                        <div class="col-12">
-                            <input type="submit" value="Send Message" />
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </div> -->
-
-    <!-- Footer -->
-    <!-- <div id="footer">
-        <ul class="copyright">
-            <li>&copy; 2025 Moinul Hossain Dhrubo. All rights reserved.</li>
-        </ul>
-    </div> -->
-
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -174,5 +268,23 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      function toggleText(dotsId, moreId, btnId) {
+        var dots = document.getElementById(dotsId);
+        var moreText = document.getElementById(moreId);
+        var btnText = document.getElementById(btnId);
+    
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          moreText.style.display = "none";
+          btnText.innerHTML = "Read More";
+        } else {
+          dots.style.display = "none";
+          moreText.style.display = "inline";
+          btnText.innerHTML = "Show Less";
+        }
+      }
+    </script>
+    
 </body>
 </html>
