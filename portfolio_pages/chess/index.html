@@ -117,11 +117,22 @@
 							</section>
 
 						<!-- Second Section -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>My favourite games</h2>
-									<p>coming up soon...</p>
-								</header>
+						<section id="second" class="main special">
+							<header class="major">
+								<h2>My Favourite Games</h2>
+								<!-- <p>Coming up soon...</p> -->
+							</header>
+						
+							<p>By winning this game with 94% accuracy with Black pieces, I got my official FIDE rating. This game 
+								also features a Brilliant move:</p>
+							<!-- Embed Game -->
+							<iframe id="12745587" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="https://www.chess.com/emboard?id=12745587"></iframe>
+							<script nonce="chesscom-diagram">
+								window.addEventListener("message", e => {
+									e['data'] && "12745587" === e['data']['id'] && document.getElementById(`${e['data']['id']}`) && (document.getElementById(`${e['data']['id']}`).style.height = `${e['data']['frameHeight'] + 37}px`);
+								});
+							</script>
+						</section>
 								<!-- <ul class="statistics">
 									<li class="style1">
 										<span class="icon solid fa-code-branch"></span>
