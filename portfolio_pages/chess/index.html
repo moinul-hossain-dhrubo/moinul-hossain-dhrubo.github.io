@@ -20,7 +20,7 @@
 				<!-- Header -->
 					<header id="header" class="alt">
 						<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
-						<h1>Checkmate !!!</h1>
+						<h1>Checkmate !</h1>
 						<p>well, not yet! First, Take a peek at my story if you wish.<br />
 						or,  Let us <a href="https://www.chess.com/member/mh_dhrubo">play a game</a> right away.</p>
 					</header>
@@ -39,27 +39,59 @@
 					<div id="main">
 
 						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Intro</h2>
-										</header>
-										<p>Hi ! I am Moinul Hossain Dhrubo......</p>
-										<ul class="actions">
-											<!-- <li><a href="generic.html" class="button">Learn More</a></li> -->
-										</ul>
-									</div>
-									<span class="image"><img src="images/knight.jpg" alt="" /></span>
+						<section id="intro" class="main">
+							<div class="spotlight">
+								<div class="content">
+									<header class="major">
+										<h2>Intro</h2>
+									</header>
+									<p>Hi! I am Moinul Hossain Dhrubo from Bangladesh. I am a rated chess player at FIDE (International Chess Federation).
+										I usually play at chess.com and occasionally on Lichess.</p>
+									<ul class="actions">
+										<li><a href="https://ratings.fide.com/profile/10254129" target="_blank" class="button">FIDE Profile</a></li>
+										<li><a href="https://www.chess.com/member/mh_dhrubo" target="_blank" class="button">Chess.com Profile</a></li>
+										<li><a href="https://lichess.org/@/MH_Dhrubo" target="_blank" class="button">Lichess Profile</a></li>
+									</ul>
 								</div>
-							</section>
-
+								<span class="image"><img src="images/knight.jpg" alt="" /></span>
+							</div>
+						</section>
 						<!-- First Section -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>Story</h2>
-                                    <p>Story for another day :p<br> As this website is still under construction. Grant my Apologies.</p>
-								</header>
+							<!-- First Section -->
+						<section id="first" class="main special">
+							<header class="major">
+								<h2>Story</h2>
+								<p id="story-text" style="text-align:left;">
+									I learned to play chess at a very early age. My elder brother taught me the rules and I occasionally played
+									with my mother and brother at that time. I could barely win a game. One day my brother offered me a pack of chips
+									if I could defeat him in a match and surprisingly I won that game. <br><br>
+									<span id="more-text" style="display:none; text-align:left;">
+										I didn't start taking chess seriously until 2018, when my friend Avishek Archan, a former competitive player, challenged me to an online match. I struggled to win, 
+										managing maybe one victory out of a hundred. After losing over a hundred times, I decided to dive deeper into the fundamentals and tactics of the game. 
+										Gradually, I began winning games against him and even surpassed his rating on chess.com. <br><br>
+										Eventually in 2021, I participated in a FIDE rated chess tournament and secured my first win in a rated event on the very first game. Out of three games 
+										I played, I won two. Later I participated in another tournament in 2022 and again secured a win against rated player and got my official FIDE Classical rating in July, 2022. 
+									</span>
+								</p>
+								<button id="read-more-btn" onclick="toggleText()">Read More</button>
+							</header>
+						</section>
+
+						<script>
+							function toggleText() {
+								var moreText = document.getElementById("more-text");
+								var btnText = document.getElementById("read-more-btn");
+
+								if (moreText.style.display === "none") {
+									moreText.style.display = "inline";
+									btnText.innerHTML = "Show Less";
+								} else {
+									moreText.style.display = "none";
+									btnText.innerHTML = "Read More";
+								}
+							}
+						</script>
+
 								<!-- <ul class="features">
 									<li>
 										<span class="icon solid major style1 fa-code"></span>
