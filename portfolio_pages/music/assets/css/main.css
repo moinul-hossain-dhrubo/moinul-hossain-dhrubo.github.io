@@ -2840,5 +2840,14 @@ input, select, textarea {
   margin-top: 5px;
 }
 
+.quote {
+    font-style: italic;
+    font-size: 0.8em;
+    color: #dddddd; /* Adjust based on your background */
+    margin-top: 15px; /* Adds spacing above */
+    text-align: center;
+	opacity: 0.7;
+}
+
 	
 	
