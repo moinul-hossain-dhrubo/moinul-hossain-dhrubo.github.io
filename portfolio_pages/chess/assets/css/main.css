@@ -3784,4 +3784,54 @@ input, select, textarea {
 
 		}
 
+		.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.button-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 140px; /* Ensuring equal width */
+    height: 45px; /* Ensuring equal height */
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.button-icon i {
+    margin-right: 8px;
+}
+
+.button-icon:nth-child(1) { background: #333; } /* GitHub */
+.button-icon:nth-child(2) { background: #FF0000; } /* YouTube */
+.button-icon:nth-child(3) { background: #E4405F; } /* Instagram */
+.button-icon:nth-child(4) { background: #764abc; } /* Chess.com */
+.button-icon:nth-child(5) { background: #0077B5; } /* LinkedIn */
+.button-icon:nth-child(6) { background: #ff7700; } /* SoundCloud */
+.button-icon:nth-child(7) { background: #2E86C1; } /* Resume */
+
+.button-icon:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design for Mobile View */
+@media screen and (max-width: 600px) {
+    .social-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center align buttons */
+    }
+
+    .button-icon {
+        width: 90%; /* Make buttons take most of the screen width */
+        max-width: 300px; /* Limit max width for better appearance */
+    }
+}
+
 		
