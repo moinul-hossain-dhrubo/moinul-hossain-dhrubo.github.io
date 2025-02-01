@@ -3834,4 +3834,11 @@ input, select, textarea {
     }
 }
 
+@media screen and (max-width: 600px) {
+    #story-text br {
+        display: block;
+        margin-bottom: 1em; /* adjust as needed */
+    }
+}
+
 		
